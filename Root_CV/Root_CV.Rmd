@@ -1,0 +1,321 @@
+---
+name: Michael J.
+surname: Root
+position: "Assistant Professor of Psychology"
+address: "Department of Psychology, Bridgewater State University, Bridgewater, MA 02325"
+phone: +1 518 531 1958
+email: "m1root@bridgew.edu"
+github: michaeljroot
+researchgate: Michael_Root3
+orcid: 0000-0003-3857-6673
+googlescholar: 0jAWWcYAAAAJ&hl
+profilepic: MJR.jpg
+date: "`r format(Sys.time(), '%B %Y')`"
+output: vitae::awesomecv
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+library(tibble)
+```
+
+# Education
+
+```{r education}
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where,
+  "Doctor of Philosophy, Psychology", "1999 --- 2005", "University of New Hampshire", "Durham, NH",
+  "Certificate of Advanced Graduate Study, General Psychology", "1998 --- 1999", "Springfield College", "Springfield, MA",
+  "Master of Science, Mental Health Counseling", "1996 --- 1998", "Springfield College", "Springfield, MA",
+  "Bachelor of Science, Psychology", "1988 --- 1992", "Springfield College", "Springfield, MA",
+) %>% 
+  detailed_entries(Degree, Year, Institution, Where)
+```
+
+# Teaching Experience
+```{r teaching experience}
+tribble(
+  ~ title, ~ what, ~ year, ~where, ~ detail, 
+  "Bridgewater State University---Assistant Professor of Psychology", "Courses Taught", "2017 --- Present", "Bridgewater, MA", "Statistics for Psychology",
+  "Bridgewater State University---Assistant Professor of Psychology", "Courses Taught", "2017 --- Present","Bridgewater, MA", "Research Methods in Psychology",
+  "Bridgewater State University---Assistant Professor of Psychology", "Courses Taught", "2017 --- Present","Bridgewater, MA", "Conducting Research: Research Methods II",
+  "Bridgewater State University---Assistant Professor of Psychology", "Courses Taught", "2017 --- Present","Bridgewater, MA", "Social Psychology",
+  "Bridgewater State University---Assistant Professor of Psychology", "Courses Taught", "2017 --- Present","Bridgewater, MA", "Internship: Peer Assisted Learning",
+  "Bridgewater State University---Assistant Professor of Psychology", "Courses Taught", "2017 --- Present","Bridgewater, MA", "Research",
+  "Bridgewater State University---Full-Time, Temporary Assistant Professor of Psychology", "Courses Taught", "2016 --- 2017","Bridgewater, MA", "Statistics for Psychology",
+  "Bridgewater State University---Full-Time, Temporary Assistant Professor of Psychology", "Courses Taught", "2016 --- 2017","Bridgewater, MA", "Research Methods in Psychology",
+  "Bridgewater State University---Full-Time, Temporary Assistant Professor of Psychology", "Courses Taught", "2016 --- 2017","Bridgewater, MA", "Social Psychology",
+  "Minnesota State University, Moorhead---Fixed-Term Assistant Professor of Psychology","Courses Taught", "2015 --- 2016", "Moorhead, MN", "General Psychology",
+  "Minnesota State University, Moorhead---Fixed-Term Assistant Professor of Psychology", "Courses Taught","2015 --- 2016", "Moorhead, MN", "Experimental Psychology",
+  "Minnesota State University, Moorhead---Fixed-Term Assistant Professor of Psychology", "Courses Taught","2015 --- 2016", "Moorhead, MN", "Social Psychology",
+  "Minnesota State University, Moorhead---Fixed-Term Assistant Professor of Psychology", "Courses Taught","2015 --- 2016", "Moorhead, MN", "Learning and Memory",
+  "Bridgewater State University---Full-Time, Temporary Assistant Professor of Psychology", "Courses Taught","2013 --- 2015","Bridgewater, MA", "Statistics for Psychology",
+  "Bridgewater State University---Full-Time, Temporary Assistant Professor of Psychology", "Courses Taught","2013 --- 2015","Bridgewater, MA", "Social Psychology",
+  "Bridgewater State University---Full-Time, Temporary Assistant Professor of Psychology", "Courses Taught","2013 --- 2015","Bridgewater, MA", "Psychology of Learning",
+  "Bridgewater State University---Full-Time, Temporary Assistant Professor of Psychology", "Courses Taught","2013 --- 2015","Bridgewater, MA", "Research Methods in Psychology",
+  "Bridgewater State University---Full-Time, Temporary Assistant Professor of Psychology", "Courses Taught","2013 --- 2015","Bridgewater, MA", "Introduction to Psychology",
+  "Coastal Carolina University---Assistant Professor of Psychology","Courses Taught", "2006 --- 2009","Conway, SC", "General Psychology (including Honors)",
+  "Coastal Carolina University---Assistant Professor of Psychology","Courses Taught", "2006 --- 2009","Conway, SC", "Introduction to Scientific Communication: Psychological Perspectives",
+  "Coastal Carolina University---Assistant Professor of Psychology","Courses Taught", "2006 --- 2009","Conway, SC", "Research Methods",
+  "Coastal Carolina University---Assistant Professor of Psychology","Courses Taught", "2006 --- 2009","Conway, SC", "Cognitive Processes (including Honors)",
+  "Coastal Carolina University---Assistant Professor of Psychology","Courses Taught", "2006 --- 2009","Conway, SC", "History and Psychology of Psychology",
+  "Ohio University---Visiting Assistant Professor of Psychology","Courses Taught", "2004 --- 2006","Athens, OH", "General Psychology",
+  "Ohio University---Visiting Assistant Professor of Psychology","Courses Taught", "2004 --- 2006","Athens, OH", "Elementary Statistical Reasoning",
+  "Ohio University---Visiting Assistant Professor of Psychology","Courses Taught", "2004 --- 2006","Athens, OH", "Statistics for the Behavioral Sciences",
+  "Ohio University---Visiting Assistant Professor of Psychology","Courses Taught", "2004 --- 2006","Athens, OH", "Human Learning and Cognitive Processes",
+  "Ohio University---Visiting Assistant Professor of Psychology","Courses Taught", "2004 --- 2006","Athens, OH", "History and Systems of Psychology (Graduate)",
+)%>% 
+  detailed_entries(
+    with = title,
+    what = what,
+    why = detail,
+    when = year,
+    where = where
+  )
+```
+
+# Research Interests
+
+* Public Understanding of Psychology
+  - Psychology Myth Prevalence
+* Pedagogical Topics
+  - Moral Evaluation of Educational Categories
+  - Student Entitlement
+* Cheater Detection in Social Exchange
+  - Source Memory for Faces of Cheaters 
+* Cognitive Biases in Risky Decisions
+  * Border Bias Heuristic
+  * Better-Than-Average Effect on Environmental Conservation
+* 20th Century History of Psychology
+  * Interdisciplinarity
+  * Boundary-Work
+* Modern and Robust Statistical Procedures
+
+# Funding and Professional Development
+
+```{r funding}
+tribble(
+  ~ award, ~ about, ~ year, ~ where, ~ amount,
+  "ATP Summer Grant Mentorship", "Student Research Mentor", "2019", "Bridgewater State University", "$2000",
+  "Professional Development Award", "Professional Development" , "2019", "Bridgewater State University", "$827",
+  "Professional Development Award", "Professional Development", "2018", "Bridgewater State University", "$838",
+  "CARS Research Grant", "Project: Content Analysis of Current History and Systems of Psychology Textbooks", "2017", "Bridgewater State University", "$2,000",
+  "Office of Undergraduate Research", "APS Conference Registration", "2017", "Bridgewater State University", "$325",
+  "Professional Development Award", "Professional Development", "2017", "Bridgewater State University", "$844",
+  "Professional Development Award", "Professional Development", "2016", "Bridgewater State University", "$821",
+  "Professional Development Award", "Professional Development", "2014", "Bridgewater State University", "$750",
+  "SOTL Grant, Center for Effective Teaching and Learning", "Project: Using WebCT to Enhance Test Performance", "2006", "Coastal Carolina University", "$2,500",
+  "Graduate Summer Research Grants", "Various Research Projects", "2001---2003", "University of New Hampshire", "$1,000/Summer",
+)%>% 
+  detailed_entries(
+    with = award,
+    what = about,
+    why = amount,
+    when = year,
+    where = where
+)
+```
+
+# Dissertation
+
+Boundary-Work in United States Psychology: A Study of Three Interdisciplinary Programs  
+(William R. Woodward, Chairperson)
+
+# Publications
+
+\hangindent=0.7 cm Root, M. J. & Stanley, C. M. (2018). Class dis-mythed: Exploring the prevalence and perseverance of myths in upper-level psychology courses. In R. L. Miller and A. Martinez (Eds.). \emph{Teaching Tips: A Compendium of Conference Presentations on Teaching, 2016-2017}. Retrieved from the Society for the Teaching of Psychology web site: http://teachpsych.org/ebooks/    
+
+\hangindent=0.7 cm Root, M. J. (2015). Thriving in a stressful world. [Review of the book \emph{Hardiness: Turning stressful circumstances into resilient growth}, by S. R. Maddi]. \emph{Journal of Constructivist Psychology, 29}(3), 335-337. doi:10.1080/10720537.2015.1071212
+
+\hangindent=0.7 cm Root, M. J. (2013). Social psychology. \emph{Office of Teaching Resources in Psychology}. http://teachpsych.org/Resources/Documents/otrp/syllabi/MR14social.pdf
+
+\hangindent=0.7 cm Root, M. J. (2011). [Review of the book \emph{A conceptual history of psychology}, by J. D. Greenwood]. \emph{Journal of the History of the Behavioral Sciences, 47}, 116-117.
+
+\hangindent=0.7 cm Root, M. J. (2009). The evolution of psychologists’ recommended child-rearing practices in the United States. In Zhukov, R., Mardahaev, L., DeCenzo, D., & Wiseman, D. (Eds.) \emph{Family and Childrearing: Russia and the USA, A Cross-Cultural Analysis}. Moscow, Russia: Russia State Social University Press.
+
+\hangindent=0.7 cm Root, M. J. (2009). [Review of the book \emph{Borrowed knowledge: Chaos theory and the challenge of learning across disciplines}, by S. H. Kellert]. \emph{Journal of the History of the Behavioral Sciences, 45}, 395-396.
+
+\hangindent=0.7 cm Root, M. J. (2008). The evolution of psychologists' recommended child-rearing practices in the United States. In Wiseman, D. G. (Ed.). \emph{The American Family: Understanding its Changing Dynamics and Place in Society} (pp. 97-111). Springfield, IL: Charles C. Thomas.
+
+\hangindent=0.7 cm Root. M. J. (2008). The origins of psychiatric care in Germany. [Review of the book \emph{The University Department of Psychiatry in Munich: From Kraepelin and his predecessors to molecular psychiatry}, by H. Hippius, H. Möller, N. Müller, & G. Neundörfer-Kohl]. \emph{PsycCRITIQUES, 53}(24).
+
+\hangindent=0.7 cm Root, M. J. (2006). The power of group processes: Unrecognized forces in historical change. [Review of the book \emph{Past impersonal: Group process in human history}, by R. Binion]. \emph{PsycCRITIQUES, 51}(9).
+
+\hangindent=0.7 cm Root, M. J. (2006). Francis Galton. In G. L. Albrecht (Ed.), \emph{Encyclopedia of Disability} (Vol. 2, pp. 758-759). Thousand Oaks, CA: Sage.
+
+\hangindent=0.7 cm Root, M. J. (2005). Keller, Fred S. In Carnes, M. C. (Ed.). \emph{American National Biography} (Supplement 2, pp. 305-307). New York, NY: Oxford University Press.
+
+\hangindent=0.7 cm Root, M. J. (2003). [Review of the book \emph{Sir Francis Galton: From African exploration to the birth of eugenics}, N. W. Gillham]. \emph{Journal of the History of the Behavioral Sciences, 39}, 393-395.
+
+\hangindent=0.7 cm Root, M. J. (2003). Great psychologists. \emph{Office of Teaching Resources in Psychology}. http://teachpsych.org/resources/Documents/otrp/syllabi/mr02historyf.pdf
+
+\hangindent=0.7 cm Root, M. J. (2002). Introduction to psychology. \emph{Office of Teaching Resources in Psychology}. http://teachpsych.org/resources/Documents/otrp/syllabi/mr01introf.pdf
+
+\hangindent=0.7 cm Root, M. J. (2002). [Review of the book \emph{Fighting for the good cause: Reflections on Francis Galton’s legacy to American hereditarian psychology}, by G. Sweeney]. \emph{The Cheiron Newsletter, Spring-Summer, 28}, 7.
+
+\hangindent=0.7 cm Root, M. J. (1998, April). Conference Report: The Sixth Annual Winter Chaos Conference. \emph{Society for Chaos Theory in Psychology and the Life Sciences Newsletter, 5}, 1-2.
+
+# Presentations 
+
+## Peer-Reviewed Conference Presentations
+
+(**bold** indicates student collaborators)
+
+\hangindent=0.7 cm Root, M. J., Hayes-Bohanan, P., & Spievak, E. R. (2020, August --- November). \emph{Do librarians really wear halos? The moral value of libraries and their workers}. [Poster session]. 2020 New England Library Association Conference. http://nelib.org/news/upcoming-events/ (Poster sessions cancelled)
+
+\hangindent=0.7 cm **Faria, C. M.**, Root, M. J., & Spievak, E. R. (2020, June 1 --- September 1). \emph{More human than humane: Stereotype content model perceptions on the mentally ill}. [Poster session]. 2020 Association for Psychological Science Conference, Chicago, IL. https://www.psychologicalscience.org/2020-virtual-poster
+
+\hangindent=0.7 cm **Wasserman, N. B., Fitian, A. A.**, Root, M. J., & Spievak, E. R. (2020, June 1 --- September 1). \emph{Guiding metaphors: Entitlement, grade expectation, and educational values}. [Poster session]. 2020 Association for Psychological Science Conference, Chicago, IL. https://www.psychologicalscience.org/2020-virtual-poster
+
+\hangindent=0.7 cm Root, M. J., Hayes-Bohanan, P., & Spievak, E. R. (2020, May). \emph{Librarians as boundary-objects: Creating a new role for information scientists in interdisciplinary research}. 2020 May CARS Celebration. Bridgewater, Ma. (Conference cancelled)
+
+\hangindent=0.7 cm **Tang, M.**, & Root, M. J. (2020, April --- May). \emph{The moral evaluation of college-related items}. [Poster session]. 2020 StARS Virtual Conference, Bridgewater, MA.
+
+\hangindent=0.7 cm **Durocher, B. R.**, Root, M. J., & Spievak, E. R. (2019, November). \emph{Myth trusters: Psychology myth prevalence in introductory psychology students}. [Poster session]. 2019 New England Psychological Association Conference, Manchester, NH.
+
+\hangindent=0.7 cm **Tang, M.**, & Root, M. J. (2019, November). \emph{Judgment day: The moral evaluation of college-related items}. [Poster session]. 2019 New England Psychological Association Conference, Manchester, NH. 
+
+\hangindent=0.7 cm **Bernique, A.**, & Root, M. J. (2019, June). \emph{Line in the sand: Is border bias evidence of an environmental threat response mechanism?} [Poster session]. 2019 Northeastern Evolutionary Psychology Society Conference, Boston, MA.
+
+\hangindent=0.7 cm Root, M. J., **LePage, J.**, **Brenner, S.**, & **Gomm, A.** (2019, May). \emph{Double trouble: Psychology undergraduates’ misconceptions about twins}. [Poster session]. 2019 Association for Psychological Science Conference, Washington, DC.
+
+\hangindent=0.7 cm Root, M. J., Ramos-Goyette, S., & **Logan, J. F.** (2019, May). Myth-told tales: \emph{Neuromyth prevalence in undergraduate biopsychology students}. [Poster session]. 2019 Association for Psychological Science Conference, Washington, DC.
+
+\hangindent=0.7 cm **Fitian, A.**, Root, M. J., & Spievak, E. (2019, May). \emph{No A’s for effort: The relationship between entitlement and college students’ grade expectations}. [Poster session]. 2019 Association for Psychological Science Conference, Washington, DC.
+
+\hangindent=0.7 cm Root, M. J., Ramos-Goyette, S., & **Logan, J. F.** (2019, April). \emph{Myth-told tales: Neuromyth prevalence in undergraduate biopsychology students}. [Poster session]. 2019 Student Arts and Research Symposium (StARS), Bridgewater State University, Bridgewater, MA.
+
+\hangindent=0.7 cm **Fitian, A.**, Root, M. J., & Spievak, E. (2019, April). \emph{No A’s for effort: The relationship between entitlement and college students’ grade expectations}. [Poster session]. 2019 Student Arts and Research Symposium (StARS), Bridgewater State University, Bridgewater, MA.
+
+\hangindent=0.7 cm Root, M. J. & **Bourget, I.** (2017, May). \emph{Myth-taken knowledge: Psychology myth prevalence in introductory psychology students}. [Poster session]. 2017 Association for Psychological Science Conference, Boston, MA.
+
+\hangindent=0.7 cm **Bourget, I.**, **Carlson, T.**, **Pollack, K.**, & Root, M. J. (2017, May). \emph{Should I stay or should I go?: Questioning the evidence for border bias}. [Poster session]. 2017 Association for Psychological Science Conference, Boston, MA.
+
+\hangindent=0.7 cm **Birkholz, S.**, Hessler, E., & Root, M. J. (2017, April). \emph{Retroactive interference effects on procedural memory}. [Poster session]. 2017 Midwestern Psychological Association Conference, Chicago, IL.
+
+\hangindent=0.7 cm **Bourget, I**. & Root, M. J. (2017, April). \emph{Myth-taken knowledge: Psychology myth prevalence in introductory psychology students}. [Poster session]. 2017 Student Arts and Research Symposium, Bridgewater State University (StARS), Bridgewater, MA.
+
+\hangindent=0.7 cm **Bourget, I.**, **Carlson, T.**, **Pollack, K.**, & Root, M. J. (2017, April). \emph{Should I stay or should I go?: Questioning the evidence for border bias}. [Poster session]. 2017 Student Arts and Research Symposium (StARS), Bridgewater State University, Bridgewater, MA.
+
+\hangindent=0.7 cm Root, M. J. & Stanley, C. M. (2017, January). \emph{Class dis-mythed: Exploring the prevalence and perseverance of myths in upper-level psychology courses}. [Poster session]. 2017 National Institute on the Teaching of Psychology, St. Pete Beach, FL.
+
+\hangindent=0.7 cm **Comeau, R. L.**, **Guaraldi, B. M.**, Root, M. J., **Molloy, B. K.**, & Spievak, E. R. (2016, May). \emph{Whose line is it anyway?: Where the borders are made up and the disasters don’t matter}. [Poster session]. 2016 American Psychological Society Conference, Chicago, IL.
+
+\hangindent=0.7 cm **Gwozdz, D.**, **Snyder, A.**, Root, M. J., **Klapatch, L.**, & Spievak, E. R. (2016, May). \emph{What’s luck got to do with it?: The relationship between belief in luck and illusion of control}. [Poster session]. 2016 Association for Psychological Science Conference, Chicago, IL.
+
+\hangindent=0.7 cm **Carlson, T.**, **Pollack, K.**, & Root, M. J. (2016, April). \emph{Disasters and border bias}. [Poster session]. 2016 Red River Psychology Conference, North Dakota State University, Fargo, ND.
+
+\hangindent=0.7 cm **Carlson, T.**, **Pollack, K.**, & Root, M. J. (2016, April). \emph{Stigmas of border bias}. [Poster session]. 2016 Student Academic Conference, Minnesota State University: Moorhead, Moorhead, MN.
+
+\hangindent=0.7 cm Stanley, C., & Root, M. J. (2016, January). \emph{What to cut and what to keep when teaching an introduction to psychology course}. [Conference workshop]. National Institute on the Teaching of Psychology Conference, Saint Pete Beach. FL.
+
+\hangindent=0.7 cm Root, M. J., **Steele, J.**, & **Maldett, C.** (2009, February). \emph{Eugenics: Uncovering a hidden story from psychology’s past}. [Conference presentation]. 2009 Celebration of Inquiry, Coastal Carolina University, Conway, SC.
+
+\hangindent=0.7 cm Root, M. J. (2008, July). \emph{Designing minds: Connecting psychology and cognitive science}. [Conference presentation]. 2008 Three Societies Conference, Oxford University, Oxford, England.
+
+\hangindent=0.7 cm Root, M. J., Palm, L. J., Brallier, S., & Podeschi, C. (2008, March). \emph{Using online practice tests to improve test performance}. [Poster session]. 2008 Conference on the Scholarship of Teaching and Learning, Myrtle Beach, SC.
+
+\hangindent=0.7 cm Root, M. J., Podeschi, C., Palm, L. J., & Brallier, S. (2008, February). \emph{Using computer based practice tests to enhance exam performance}. [Poster session]. 2008 Scholarship of Teaching and Learning Symposium, Coastal Carolina University, Conway, SC.
+
+\hangindent=0.7 cm Root, M. J., & **Steele, J.** (2008, February). \emph{The role of podcasting in education}. [Conference presentation]. 2008 Celebration of Inquiry, Coastal Carolina University, Conway, SC.
+
+\hangindent=0.7 cm Root, M. J., & **Steele, J.** (2008, February). \emph{Myth-making in the history of psychology: What students really need to know}. [Conference presentation]. 2008 Celebration of Inquiry, Coastal Carolina University, Conway, SC.
+
+\hangindent=0.7 cm Root, M. J. (2003, August). \emph{Psychology at its boundaries: A study of three interdisciplinary movements}. [Conference presentation]. 2003 American Psychological Association Conference, Toronto, Canada.
+
+\hangindent=0.7 cm Root, M. J. (2003, August). \emph{Unification through chaos: Can chaos theory unify psychology?} [Poster session]. 2003 American Psychological Association Conference, Toronto, Canada.
+
+\hangindent=0.7 cm Root, M. J. (2003, June). \emph{Boundary-work in psychology: Three interdisciplinary movements}. [Conference presentation]. 2003 Cheiron: The International Society for the History of Behavioral and Social Sciences Conference, University of New Hampshire, Durham, NH.
+
+\hangindent=0.7 cm Root, M. J. (2002, August). \emph{The strange attraction of psychology to chaos}. [Conference presentation]. 2002 American Psychological Association Conference, Chicago, IL.
+
+\hangindent=0.7 cm Root, M. J. (2002, March). \emph{Cheater detection content effects on the Wason selection task}. [Poster session]. 2002 Eastern Psychological Association Annual Meeting, Boston, MA.
+
+\hangindent=0.7 cm Root, M. J. (1998, August). \emph{The complex adapted mind: Rediscovering the mind with complexity and evolutionary psychology}. [Conference presentation]. 1998 Society for Chaos Theory in Psychology and the Life Sciences Conference. Boston University, Boston, MA.
+
+\hangindent=0.7 cm Root, M. J. (1997, November). \emph{Introductory fundamentals of chaos and complexity theory}. [Invited address] 1997 Green Mountain College, Poultney, VT.
+
+\hangindent=0.7 cm Root, M. J. (1997, July). \emph{George Kelly’s theory of personal constructs and chaos theory: A confluence of ideas}. [Conference presentation]. 1997 Society for Chaos Theory in Psychology and the Life Sciences, Marquette University, Milwaukee, WI.
+
+\hangindent=0.7 cm Root, M. J. (1997, June). \emph{Chaos theory in counseling, psychotherapy and psychology}. Professional Development Workshop, Department of Counseling, Idaho State University, Pocatello, ID.
+
+\hangindent=0.7 cm Root, M. J. (1997, February). \emph{Reconstructing Kelly’s construct system in phase space}. [Conference presentation]. 1997 Vermont Chaos Conference, Waterbury, VT.
+
+# Awards and Fellowships
+
+```{r awards}
+tribble(
+  ~ award, ~ from, ~ year, ~ where,
+  "Teaching Recognition", "Panhellenic Association", "2014", "Bridgewater State University",
+  "Student Academic Achievement Award", "Department of Psychology, Springfield College", "1998 --- 1999", "Springfield College",
+  "Teaching Fellowship", "Department of Psychology, Springfield College", "1997 --- 1999", "Springfield College"
+)%>% 
+  detailed_entries(
+    with = award,
+    what = from,
+    when = year,
+    where = where
+)
+```
+
+# Service and Professional Activities
+
+```{r service}
+tribble(
+  ~ title, ~ service, ~ year, ~ where, ~detail,
+  "External Service", "Activities", "Various", NA, "Archivist/Historian-elect for the Society for the Teaching of Psychology (2021)",
+  "External Service", "Activities", "Various", NA, "Manuscript Reviewer for the Big South Undergraduate Research Symposium held at UNC-Asheville (2007)",
+  "External Service", "Activities", "Various", NA, "Reviewer for PsycCRITIQUES (Contemporary Psychology: APA Review of Books) (2005 --- 2008)",
+  "External Service", "Activities", "Various", NA, "Ad hoc Reviewer for the journal History of Psychology (2002)",
+  "Bridgewater State University Service", "Activities", "2016 --- Present", "Bridgewater State University", "Center for the Advancement of Research and Scholarship (CARS) Advisory Committee (2020)",
+  "Bridgewater State University Service", "Activities", "2016 --- Present", "Bridgewater State University", "Psychology Search Rules Committee",
+  "Bridgewater State University Service", "Activities", "2016 --- Present", "Bridgewater State University", "Honors Committee",
+  "Bridgewater State University Service", "Activities", "2016 --- Present", "Bridgewater State University", "Laboratory Advisory Committee",
+  "Bridgewater State University Service", "Activities", "2016 --- Present", "Bridgewater State University", "Special 1-Year Retention Review Committee (2017)",
+  "Minnesota State University Service", "Activities", "2015 --- 2016", "Minnesota State University", "Departmental IRB Committee",
+  "Minnesota State University Service", "Activities", "2015 --- 2016", "Minnesota State University", "Liberal Arts and Science Curriculum Committee",
+  "Coastal Carolina University Service", "Activities", "2005 --- 2009", "Coastal Carolina University", "University Teacher Evaluation Committee",
+  "Coastal Carolina University Service", "Activities", "2005 --- 2009", "Coastal Carolina University", "Sociology Faculty Search Committee",
+  "Coastal Carolina University Service", "Activities", "2005 --- 2009", "Coastal Carolina University", "Celebration of Inquiry College Liasons Committee",
+  "Coastal Carolina University Service", "Activities", "2005 --- 2009", "Coastal Carolina University", "Psychology Faculty Search Committee",
+  "Coastal Carolina University Service", "Activities", "2005 --- 2009", "Coastal Carolina University", "Psychological Communications Committee",
+  "University of New Hampshire Service", "Activities", "2003", "University of New Hampshire", "Manuscript Reviewer for Cheiron, The International Society for the History of Behavioral and Social Sciences 35th Annual Conference", 
+  "University of New Hampshire Service", "Activities", "2003", "University of New Hampshire", "Conference Coordinator, The International Society for the History of Behavioral and Social Sciences 35th Annual Conference",
+  "Springfield College Service", "Activities", "1998", "Springfield College", "Chairperson, Scholarship Committee",
+  "Springfield College Service", "Activities", "1998", "Springfield College", "Conference Coordinator, Sixth Annual Winter Chaos Conference",
+  )%>% 
+  detailed_entries(
+    with = title,
+    what = service,
+    why = detail,
+    when = year,
+    where = where
+)
+```
+
+# Professional Organization Memberships
+
+* Association for Psychological Science
+* Society for the Teaching of Psychology
+* Northeastern Evolutionary Psychology Society
+
+# Professional References
+
+Sandra Neargarder, Ph.D., Dept. Chair, 
+Psychology Dept., 90 Burrill Ave., 
+Bridgewater State University, Bridgewater, MA 02325, 
+sneargarder@bridgew.edu,
+508-531-2378
+
+Christine Malone, Ph.D., Dept. Chair,
+Psychology Dept., 360 G Bridges Hall,
+Minnesota State University Moorhead, MN 56563,
+malonech@mnstate.edu,
+218-477-2804
+
+William R. Woodward, Ph.D.,
+Dept. of Psychology, Conant Hall, 10 Library Way,
+University of New Hampshire, Durham, NH 03824,
+William.Woodward@unh.edu,
+603-862-3199
